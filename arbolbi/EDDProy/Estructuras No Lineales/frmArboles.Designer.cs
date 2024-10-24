@@ -37,19 +37,17 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             // txtDato
             // 
-            this.txtDato.Location = new System.Drawing.Point(57, 19);
-            this.txtDato.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDato.Location = new System.Drawing.Point(85, 30);
             this.txtDato.Multiline = true;
             this.txtDato.Name = "txtDato";
-            this.txtDato.Size = new System.Drawing.Size(68, 31);
+            this.txtDato.Size = new System.Drawing.Size(100, 46);
             this.txtDato.TabIndex = 0;
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(138, 19);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregar.Location = new System.Drawing.Point(207, 30);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(83, 29);
+            this.btnAgregar.Size = new System.Drawing.Size(124, 46);
             this.btnAgregar.TabIndex = 1;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -59,20 +57,18 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             this.txtArbol.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtArbol.Location = new System.Drawing.Point(8, 300);
-            this.txtArbol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtArbol.Location = new System.Drawing.Point(12, 184);
             this.txtArbol.Multiline = true;
             this.txtArbol.Name = "txtArbol";
             this.txtArbol.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.txtArbol.Size = new System.Drawing.Size(684, 164);
+            this.txtArbol.Size = new System.Drawing.Size(776, 254);
             this.txtArbol.TabIndex = 2;
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(138, 58);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLimpiar.Location = new System.Drawing.Point(207, 91);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(83, 29);
+            this.btnLimpiar.Size = new System.Drawing.Size(124, 46);
             this.btnLimpiar.TabIndex = 1;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
@@ -80,14 +76,13 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             // frmArboles
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(698, 470);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtArbol);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtDato);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmArboles";
             this.Text = "frmArboles";
             this.ResumeLayout(false);
