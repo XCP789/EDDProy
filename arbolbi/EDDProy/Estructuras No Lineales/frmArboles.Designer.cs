@@ -41,12 +41,18 @@ namespace EDDemo.Estructuras_No_Lineales
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtDato
             // 
             this.txtDato.Location = new System.Drawing.Point(408, 367);
-            this.txtDato.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDato.Margin = new System.Windows.Forms.Padding(2);
             this.txtDato.Multiline = true;
             this.txtDato.Name = "txtDato";
             this.txtDato.Size = new System.Drawing.Size(125, 43);
@@ -55,7 +61,7 @@ namespace EDDemo.Estructuras_No_Lineales
             // btnAgregar
             // 
             this.btnAgregar.Location = new System.Drawing.Point(561, 367);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(113, 43);
             this.btnAgregar.TabIndex = 1;
@@ -67,18 +73,18 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             this.txtArbol.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtArbol.Location = new System.Drawing.Point(191, 11);
-            this.txtArbol.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtArbol.Location = new System.Drawing.Point(280, 11);
+            this.txtArbol.Margin = new System.Windows.Forms.Padding(2);
             this.txtArbol.Multiline = true;
             this.txtArbol.Name = "txtArbol";
             this.txtArbol.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.txtArbol.Size = new System.Drawing.Size(589, 321);
+            this.txtArbol.Size = new System.Drawing.Size(500, 182);
             this.txtArbol.TabIndex = 2;
             // 
             // btnLimpiar
             // 
             this.btnLimpiar.Location = new System.Drawing.Point(52, 32);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(93, 29);
             this.btnLimpiar.TabIndex = 1;
@@ -155,14 +161,75 @@ namespace EDDemo.Estructuras_No_Lineales
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(93, 32);
             this.button8.TabIndex = 10;
-            this.button8.Text = "button8";
+            this.button8.Text = "crear arbol:";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.Location = new System.Drawing.Point(344, 379);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 25);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Dato:";
+            // 
+            // domainUpDown1
+            // 
+            this.domainUpDown1.Location = new System.Drawing.Point(161, 434);
+            this.domainUpDown1.Name = "domainUpDown1";
+            this.domainUpDown1.Size = new System.Drawing.Size(75, 22);
+            this.domainUpDown1.TabIndex = 13;
+            this.domainUpDown1.Text = "domainUpDown1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(277, 211);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 16);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "PreOrden";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(277, 250);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 16);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "InOrden";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(277, 289);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(71, 16);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "PostOrden";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(260, 444);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(78, 16);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "//pictureBox";
             // 
             // frmArboles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(791, 483);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.domainUpDown1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -175,7 +242,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtDato);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmArboles";
             this.Text = "frmArboles";
             this.ResumeLayout(false);
@@ -197,5 +264,11 @@ namespace EDDemo.Estructuras_No_Lineales
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DomainUpDown domainUpDown1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
