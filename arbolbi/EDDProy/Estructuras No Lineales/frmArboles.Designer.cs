@@ -33,20 +33,22 @@ namespace EDDemo.Estructuras_No_Lineales
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtArbol = new System.Windows.Forms.TextBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRecorrer = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnCrearArbol = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.lblRePreOrden = new System.Windows.Forms.Label();
+            this.txtNodos = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNodos)).BeginInit();
             this.SuspendLayout();
             // 
             // txtDato
@@ -92,14 +94,15 @@ namespace EDDemo.Estructuras_No_Lineales
             this.btnLimpiar.UseVisualStyleBackColor = true;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
-            // button1
+            // btnRecorrer
             // 
-            this.button1.Location = new System.Drawing.Point(52, 79);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 32);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRecorrer.Location = new System.Drawing.Point(52, 79);
+            this.btnRecorrer.Name = "btnRecorrer";
+            this.btnRecorrer.Size = new System.Drawing.Size(93, 32);
+            this.btnRecorrer.TabIndex = 3;
+            this.btnRecorrer.Text = "recorrer";
+            this.btnRecorrer.UseVisualStyleBackColor = true;
+            this.btnRecorrer.Click += new System.EventHandler(this.btnRecorrer_Click);
             // 
             // button2
             // 
@@ -155,15 +158,15 @@ namespace EDDemo.Estructuras_No_Lineales
             this.button7.Text = "button7";
             this.button7.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnCrearArbol
             // 
-            this.button8.Location = new System.Drawing.Point(52, 428);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(93, 32);
-            this.button8.TabIndex = 10;
-            this.button8.Text = "crear arbol:";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.btnCrearArbol.Location = new System.Drawing.Point(52, 428);
+            this.btnCrearArbol.Name = "btnCrearArbol";
+            this.btnCrearArbol.Size = new System.Drawing.Size(93, 32);
+            this.btnCrearArbol.TabIndex = 10;
+            this.btnCrearArbol.Text = "crear arbol:";
+            this.btnCrearArbol.UseVisualStyleBackColor = true;
+            this.btnCrearArbol.Click += new System.EventHandler(this.btnCrearArbol_Click);
             // 
             // label1
             // 
@@ -174,14 +177,6 @@ namespace EDDemo.Estructuras_No_Lineales
             this.label1.Size = new System.Drawing.Size(59, 25);
             this.label1.TabIndex = 11;
             this.label1.Text = "Dato:";
-            // 
-            // domainUpDown1
-            // 
-            this.domainUpDown1.Location = new System.Drawing.Point(161, 434);
-            this.domainUpDown1.Name = "domainUpDown1";
-            this.domainUpDown1.Size = new System.Drawing.Size(75, 22);
-            this.domainUpDown1.TabIndex = 13;
-            this.domainUpDown1.Text = "domainUpDown1";
             // 
             // label2
             // 
@@ -219,25 +214,47 @@ namespace EDDemo.Estructuras_No_Lineales
             this.label5.TabIndex = 17;
             this.label5.Text = "//pictureBox";
             // 
+            // lblRePreOrden
+            // 
+            this.lblRePreOrden.AutoSize = true;
+            this.lblRePreOrden.Location = new System.Drawing.Point(359, 211);
+            this.lblRePreOrden.Name = "lblRePreOrden";
+            this.lblRePreOrden.Size = new System.Drawing.Size(11, 16);
+            this.lblRePreOrden.TabIndex = 18;
+            this.lblRePreOrden.Text = "`";
+            // 
+            // txtNodos
+            // 
+            this.txtNodos.Location = new System.Drawing.Point(151, 434);
+            this.txtNodos.Name = "txtNodos";
+            this.txtNodos.Size = new System.Drawing.Size(68, 22);
+            this.txtNodos.TabIndex = 19;
+            this.txtNodos.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // frmArboles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(791, 483);
+            this.Controls.Add(this.txtNodos);
+            this.Controls.Add(this.lblRePreOrden);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.domainUpDown1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.btnCrearArbol);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRecorrer);
             this.Controls.Add(this.txtArbol);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnAgregar);
@@ -245,6 +262,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmArboles";
             this.Text = "frmArboles";
+            ((System.ComponentModel.ISupportInitialize)(this.txtNodos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,19 +274,20 @@ namespace EDDemo.Estructuras_No_Lineales
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox txtArbol;
         private System.Windows.Forms.Button btnLimpiar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRecorrer;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnCrearArbol;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DomainUpDown domainUpDown1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblRePreOrden;
+        private System.Windows.Forms.NumericUpDown txtNodos;
     }
 }
