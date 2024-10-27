@@ -82,6 +82,7 @@ namespace EDDemo.Estructuras_No_Lineales
             PreOrden(nodo.Izq);
             PreOrden(nodo.Der);
               
+            return;
         }
 
         public void InOrden(NodoBinario nodo)
@@ -91,6 +92,8 @@ namespace EDDemo.Estructuras_No_Lineales
             InOrden(nodo.Izq);
             strRecorrido=strRecorrido+nodo.Dato + ", ";
             InOrden(nodo.Der);
+
+            return;
         }
 
         public void PostOrden(NodoBinario nodo)
@@ -99,7 +102,9 @@ namespace EDDemo.Estructuras_No_Lineales
 
             PostOrden(nodo.Izq);
             PostOrden(nodo.Der);
-            strRecorrido=strRecorrido=nodo.Dato + ", ";
+            strRecorrido=strRecorrido + nodo.Dato + ", ";
+
+            return;
         }
     }
 

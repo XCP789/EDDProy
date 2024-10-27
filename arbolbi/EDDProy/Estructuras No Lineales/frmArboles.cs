@@ -74,12 +74,12 @@ namespace EDDemo.Estructuras_No_Lineales
 
             if (miRaiz == null)
             {
-                lblRePreOrden.Text = "El arbol esta vacio";
+                lblReInOrden.Text = "El arbol esta vacio";
                 return;
             }
-            lblRePreOrden.Text = "";
+            lblReInOrden.Text = "";
             miArbol.InOrden(miRaiz);
-            lblRePreOrden.Text = miArbol.strRecorrido;
+            lblReInOrden.Text = miArbol.strRecorrido;
 
             //recorrido PostOrden
             miRaiz = miArbol.RegresaRaiz();
@@ -87,12 +87,12 @@ namespace EDDemo.Estructuras_No_Lineales
 
             if (miRaiz == null)
             {
-                lblRePreOrden.Text = "El arbol esta vacio";
+                lblRePostOrden.Text = "El arbol esta vacio";
                 return;
             }
-            lblRePreOrden.Text = "";
+            lblRePostOrden.Text = "";
             miArbol.PostOrden(miRaiz);
-            lblRePreOrden.Text = miArbol.strRecorrido;
+            lblRePostOrden.Text = miArbol.strRecorrido;
         }
 
         private void btnCrearArbol_Click(object sender, EventArgs e)
