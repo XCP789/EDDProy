@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace EDDemo.Estructuras_No_Lineales
 {
@@ -32,10 +33,10 @@ namespace EDDemo.Estructuras_No_Lineales
         }
 
         public void InsertaNodo(int Dato, ref NodoBinario Nodo)
-        {            
+        {
             if (Nodo == null)
             {
-                Nodo = new NodoBinario(Dato);            
+                Nodo = new NodoBinario(Dato);
 
                 if (Raiz == null)
                     Raiz = Nodo;
@@ -43,23 +44,23 @@ namespace EDDemo.Estructuras_No_Lineales
             else if (Dato < Nodo.Dato)
                 InsertaNodo(Dato, ref Nodo.Izq);
             else if (Dato > Nodo.Dato)
-                InsertaNodo(Dato, ref Nodo.Der);          
+                InsertaNodo(Dato, ref Nodo.Der);
         }
-        public void Muestra(int nivel, NodoBinario nodo )
+        public void Muestra(int nivel, NodoBinario nodo)
         {
             if (nodo == null)
                 return;
             Muestra(nivel + 1, nodo.Der);
-            for(int i=0; i<nivel; i++)
+            for (int i = 0; i < nivel; i++)
             {
                 strArbol = strArbol + "     ";
             }
             strArbol = strArbol + nodo.Dato.ToString() + "\r\n";
-            Muestra(nivel + 1, nodo.Izq); 
+            Muestra(nivel + 1, nodo.Izq);
         }
         public String toDot(NodoBinario nodo)
         {
-            StringBuilder b=new StringBuilder();
+            StringBuilder b = new StringBuilder();
             if (nodo.Izq != null)
             {
                 b.AppendFormat("{0}->{1} [side=L] {2}", nodo.Dato.ToString(), nodo.Izq.Dato.ToString(), Environment.NewLine);
@@ -76,12 +77,12 @@ namespace EDDemo.Estructuras_No_Lineales
         }
         public void PreOrden(NodoBinario nodo)
         {
-            if(nodo == null) return;
+            if (nodo == null) return;
 
             strRecorrido = strRecorrido + nodo.Dato + ", ";
             PreOrden(nodo.Izq);
             PreOrden(nodo.Der);
-              
+
             return;
         }
 
@@ -90,7 +91,7 @@ namespace EDDemo.Estructuras_No_Lineales
             if (nodo == null) return;
 
             InOrden(nodo.Izq);
-            strRecorrido=strRecorrido+nodo.Dato + ", ";
+            strRecorrido = strRecorrido + nodo.Dato + ", ";
             InOrden(nodo.Der);
 
             return;
@@ -98,13 +99,50 @@ namespace EDDemo.Estructuras_No_Lineales
 
         public void PostOrden(NodoBinario nodo)
         {
-            if(nodo == null) return;
+            if (nodo == null) return;
 
             PostOrden(nodo.Izq);
             PostOrden(nodo.Der);
-            strRecorrido=strRecorrido + nodo.Dato + ", ";
+            strRecorrido = strRecorrido + nodo.Dato + ", ";
 
             return;
+        }
+
+        public bool busqueda(int valor)
+        {
+            return busqueda(Raiz, valor);
+        }
+
+        private bool busqueda(NodoBinario nodo, int valor)
+        {
+            if(nodo == null) return false;
+
+            if (nodo.Dato == valor)
+            {
+                return true;
+            }
+
+            else if (valor < nodo.Dato)
+            {
+                return busqueda(nodo.Izq, valor);
+            }
+            else
+            {
+                return busqueda(nodo.Der, valor);
+            }
+        }
+
+        public void MostrarBuqueda(int valor)
+        {
+            bool encontrado = busqueda(valor);
+            if (encontrado)
+            {
+                MessageBox.Show($"El {valor} SI se encuentra en el arbol");
+            }
+            else
+            {
+                MessageBox.Show($"El {valor} NO se encuentra en el arbol");
+            }
         }
     }
 

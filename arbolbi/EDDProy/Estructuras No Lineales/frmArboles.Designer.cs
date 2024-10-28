@@ -34,7 +34,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.txtArbol = new System.Windows.Forms.TextBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnRecorrer = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnBusqueda = new System.Windows.Forms.Button();
             this.btnCrearArbol = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,6 +45,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.txtNodos = new System.Windows.Forms.NumericUpDown();
             this.lblReInOrden = new System.Windows.Forms.Label();
             this.lblRePostOrden = new System.Windows.Forms.Label();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.txtNodos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,14 +102,15 @@ namespace EDDemo.Estructuras_No_Lineales
             this.btnRecorrer.UseVisualStyleBackColor = true;
             this.btnRecorrer.Click += new System.EventHandler(this.btnRecorrer_Click);
             // 
-            // button2
+            // btnBusqueda
             // 
-            this.button2.Location = new System.Drawing.Point(52, 126);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(93, 32);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBusqueda.Location = new System.Drawing.Point(52, 126);
+            this.btnBusqueda.Name = "btnBusqueda";
+            this.btnBusqueda.Size = new System.Drawing.Size(93, 32);
+            this.btnBusqueda.TabIndex = 4;
+            this.btnBusqueda.Text = "buscar";
+            this.btnBusqueda.UseVisualStyleBackColor = true;
+            this.btnBusqueda.Click += new System.EventHandler(this.btnBusqueda_Click);
             // 
             // btnCrearArbol
             // 
@@ -205,11 +207,19 @@ namespace EDDemo.Estructuras_No_Lineales
             this.lblRePostOrden.TabIndex = 21;
             this.lblRePostOrden.Text = "Recorrido Postorden";
             // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Location = new System.Drawing.Point(151, 131);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(56, 22);
+            this.txtBuscar.TabIndex = 22;
+            // 
             // frmArboles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(791, 483);
+            this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.lblRePostOrden);
             this.Controls.Add(this.lblReInOrden);
             this.Controls.Add(this.txtNodos);
@@ -220,7 +230,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCrearArbol);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnBusqueda);
             this.Controls.Add(this.btnRecorrer);
             this.Controls.Add(this.txtArbol);
             this.Controls.Add(this.btnLimpiar);
@@ -242,7 +252,7 @@ namespace EDDemo.Estructuras_No_Lineales
         private System.Windows.Forms.TextBox txtArbol;
         private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnRecorrer;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnBusqueda;
         private System.Windows.Forms.Button btnCrearArbol;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -253,5 +263,6 @@ namespace EDDemo.Estructuras_No_Lineales
         private System.Windows.Forms.NumericUpDown txtNodos;
         private System.Windows.Forms.Label lblReInOrden;
         private System.Windows.Forms.Label lblRePostOrden;
+        private System.Windows.Forms.TextBox txtBuscar;
     }
 }

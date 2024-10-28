@@ -125,6 +125,10 @@ namespace EDDemo.Estructuras_No_Lineales
             txtDato.Text = "";
         }
 
-
+        private void btnBusqueda_Click(object sender, EventArgs e)
+        {
+            int valor = int.Parse(txtBuscar.Text);
+            miArbol.MostrarBuqueda(valor);
+        }
     }
 }
