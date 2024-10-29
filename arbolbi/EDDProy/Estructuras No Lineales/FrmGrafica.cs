@@ -20,6 +20,9 @@ namespace EDDemo
             this.raiz = raiz;
         }
 
+        public FrmGrafica()
+        {
+        }
 
         private void FrmGrafica_Paint(object sender, PaintEventArgs e)
         {

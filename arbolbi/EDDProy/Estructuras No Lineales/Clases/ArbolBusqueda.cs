@@ -41,6 +41,10 @@ namespace EDDemo.Estructuras_No_Lineales
                 if (Raiz == null)
                     Raiz = Nodo;
             }
+            else if(Dato == Nodo.Dato)
+            {
+                MessageBox.Show($"el valor {Dato} ya existe en el arbol");
+            }
             else if (Dato < Nodo.Dato)
                 InsertaNodo(Dato, ref Nodo.Izq);
             else if (Dato > Nodo.Dato)

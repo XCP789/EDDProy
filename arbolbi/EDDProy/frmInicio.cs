@@ -45,6 +45,13 @@ namespace EDDemo
             frmArboles mArboles = new frmArboles();
             mArboles.MdiParent = this;
             mArboles.Show();
+
+            
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }
