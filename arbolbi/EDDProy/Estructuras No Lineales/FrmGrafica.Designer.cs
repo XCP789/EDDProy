@@ -47,6 +47,7 @@
             this.Controls.Add(this.panelDibujo);
             this.Name = "FrmGrafica";
             this.Text = "FrmGrafica";
+            this.Load += new System.EventHandler(this.FrmGrafica_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.FrmGrafica_Paint);
             this.ResumeLayout(false);
 
