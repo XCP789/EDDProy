@@ -33,11 +33,9 @@
             // 
             // panelDibujo
             // 
-            this.panelDibujo.AutoSize = true;
-            this.panelDibujo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelDibujo.Location = new System.Drawing.Point(1, -1);
             this.panelDibujo.Name = "panelDibujo";
-            this.panelDibujo.Size = new System.Drawing.Size(0, 0);
+            this.panelDibujo.Size = new System.Drawing.Size(931, 540);
             this.panelDibujo.TabIndex = 0;
             this.panelDibujo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDibujo_Paint);
             // 
@@ -51,7 +49,6 @@
             this.Text = "FrmGrafica";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.FrmGrafica_Paint);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
