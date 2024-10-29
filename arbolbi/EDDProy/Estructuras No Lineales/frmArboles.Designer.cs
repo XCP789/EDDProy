@@ -40,18 +40,18 @@ namespace EDDemo.Estructuras_No_Lineales
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.lblRePreOrden = new System.Windows.Forms.Label();
             this.txtNodos = new System.Windows.Forms.NumericUpDown();
             this.lblReInOrden = new System.Windows.Forms.Label();
             this.lblRePostOrden = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.btnDibujarA = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.txtNodos)).BeginInit();
             this.SuspendLayout();
             // 
             // txtDato
             // 
-            this.txtDato.Location = new System.Drawing.Point(408, 379);
+            this.txtDato.Location = new System.Drawing.Point(111, 215);
             this.txtDato.Margin = new System.Windows.Forms.Padding(2);
             this.txtDato.Multiline = true;
             this.txtDato.Name = "txtDato";
@@ -60,7 +60,7 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(561, 367);
+            this.btnAgregar.Location = new System.Drawing.Point(240, 209);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(113, 43);
@@ -114,7 +114,7 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             // btnCrearArbol
             // 
-            this.btnCrearArbol.Location = new System.Drawing.Point(52, 203);
+            this.btnCrearArbol.Location = new System.Drawing.Point(52, 165);
             this.btnCrearArbol.Name = "btnCrearArbol";
             this.btnCrearArbol.Size = new System.Drawing.Size(93, 32);
             this.btnCrearArbol.TabIndex = 10;
@@ -126,7 +126,7 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(344, 379);
+            this.label1.Location = new System.Drawing.Point(47, 215);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 25);
             this.label1.TabIndex = 11;
@@ -135,7 +135,7 @@ namespace EDDemo.Estructuras_No_Lineales
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(277, 211);
+            this.label2.Location = new System.Drawing.Point(57, 271);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 16);
             this.label2.TabIndex = 14;
@@ -144,7 +144,7 @@ namespace EDDemo.Estructuras_No_Lineales
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(277, 250);
+            this.label3.Location = new System.Drawing.Point(57, 310);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 16);
             this.label3.TabIndex = 15;
@@ -153,25 +153,16 @@ namespace EDDemo.Estructuras_No_Lineales
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(277, 289);
+            this.label4.Location = new System.Drawing.Point(57, 349);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 16);
             this.label4.TabIndex = 16;
             this.label4.Text = "PostOrden";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(260, 444);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 16);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "//pictureBox";
-            // 
             // lblRePreOrden
             // 
             this.lblRePreOrden.AutoSize = true;
-            this.lblRePreOrden.Location = new System.Drawing.Point(359, 211);
+            this.lblRePreOrden.Location = new System.Drawing.Point(139, 271);
             this.lblRePreOrden.Name = "lblRePreOrden";
             this.lblRePreOrden.Size = new System.Drawing.Size(126, 16);
             this.lblRePreOrden.TabIndex = 18;
@@ -179,7 +170,7 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             // txtNodos
             // 
-            this.txtNodos.Location = new System.Drawing.Point(151, 209);
+            this.txtNodos.Location = new System.Drawing.Point(151, 171);
             this.txtNodos.Name = "txtNodos";
             this.txtNodos.Size = new System.Drawing.Size(68, 22);
             this.txtNodos.TabIndex = 19;
@@ -192,7 +183,7 @@ namespace EDDemo.Estructuras_No_Lineales
             // lblReInOrden
             // 
             this.lblReInOrden.AutoSize = true;
-            this.lblReInOrden.Location = new System.Drawing.Point(359, 250);
+            this.lblReInOrden.Location = new System.Drawing.Point(139, 310);
             this.lblReInOrden.Name = "lblReInOrden";
             this.lblReInOrden.Size = new System.Drawing.Size(115, 16);
             this.lblReInOrden.TabIndex = 20;
@@ -201,7 +192,7 @@ namespace EDDemo.Estructuras_No_Lineales
             // lblRePostOrden
             // 
             this.lblRePostOrden.AutoSize = true;
-            this.lblRePostOrden.Location = new System.Drawing.Point(359, 289);
+            this.lblRePostOrden.Location = new System.Drawing.Point(139, 349);
             this.lblRePostOrden.Name = "lblRePostOrden";
             this.lblRePostOrden.Size = new System.Drawing.Size(132, 16);
             this.lblRePostOrden.TabIndex = 21;
@@ -214,17 +205,28 @@ namespace EDDemo.Estructuras_No_Lineales
             this.txtBuscar.Size = new System.Drawing.Size(56, 22);
             this.txtBuscar.TabIndex = 22;
             // 
+            // btnDibujarA
+            // 
+            this.btnDibujarA.Location = new System.Drawing.Point(60, 395);
+            this.btnDibujarA.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDibujarA.Name = "btnDibujarA";
+            this.btnDibujarA.Size = new System.Drawing.Size(113, 43);
+            this.btnDibujarA.TabIndex = 23;
+            this.btnDibujarA.Text = "dibujar";
+            this.btnDibujarA.UseVisualStyleBackColor = true;
+            this.btnDibujarA.Click += new System.EventHandler(this.btnDibujarA_Click);
+            // 
             // frmArboles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(791, 483);
+            this.Controls.Add(this.btnDibujarA);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.lblRePostOrden);
             this.Controls.Add(this.lblReInOrden);
             this.Controls.Add(this.txtNodos);
             this.Controls.Add(this.lblRePreOrden);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -258,11 +260,11 @@ namespace EDDemo.Estructuras_No_Lineales
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblRePreOrden;
         private System.Windows.Forms.NumericUpDown txtNodos;
         private System.Windows.Forms.Label lblReInOrden;
         private System.Windows.Forms.Label lblRePostOrden;
         private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.Button btnDibujarA;
     }
 }

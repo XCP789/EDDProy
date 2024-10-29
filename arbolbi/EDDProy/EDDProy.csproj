@@ -60,6 +60,12 @@
       <DependentUpon>frmArboles.cs</DependentUpon>
     </Compile>
     <Compile Include="Estructuras No Lineales\Clases\NodoBinario.cs" />
+    <Compile Include="Estructuras No Lineales\FrmGrafica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras No Lineales\FrmGrafica.Designer.cs">
+      <DependentUpon>FrmGrafica.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Estructuras No Lineales\frmArboles.resx">
       <DependentUpon>frmArboles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras No Lineales\FrmGrafica.resx">
+      <DependentUpon>FrmGrafica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>

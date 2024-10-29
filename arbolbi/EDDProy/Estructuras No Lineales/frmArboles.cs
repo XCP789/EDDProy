@@ -130,5 +130,14 @@ namespace EDDemo.Estructuras_No_Lineales
             int valor = int.Parse(txtBuscar.Text);
             miArbol.MostrarBuqueda(valor);
         }
+
+        
+
+        private void btnDibujarA_Click(object sender, EventArgs e)
+        {
+            FrmGrafica grafica = new FrmGrafica(miRaiz);
+            grafica.Show();
+        }
+
     }
 }
