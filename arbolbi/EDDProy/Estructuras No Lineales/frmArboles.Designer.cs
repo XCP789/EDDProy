@@ -46,6 +46,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.lblRePostOrden = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnDibujarA = new System.Windows.Forms.Button();
+            this.btnPodarArbol = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.txtNodos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -168,6 +169,7 @@ namespace EDDemo.Estructuras_No_Lineales
             this.lblRePreOrden.Size = new System.Drawing.Size(126, 16);
             this.lblRePreOrden.TabIndex = 18;
             this.lblRePreOrden.Text = "Recorrido Preorden";
+
             // 
             // txtNodos
             // 
@@ -219,11 +221,23 @@ namespace EDDemo.Estructuras_No_Lineales
             this.btnDibujarA.UseVisualStyleBackColor = true;
             this.btnDibujarA.Click += new System.EventHandler(this.btnDibujarA_Click);
             // 
+            // btnPodarArbol
+            // 
+            this.btnPodarArbol.Location = new System.Drawing.Point(29, 442);
+            this.btnPodarArbol.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPodarArbol.Name = "btnPodarArbol";
+            this.btnPodarArbol.Size = new System.Drawing.Size(124, 43);
+            this.btnPodarArbol.TabIndex = 24;
+            this.btnPodarArbol.Text = "podar";
+            this.btnPodarArbol.UseVisualStyleBackColor = true;
+            this.btnPodarArbol.Click += new System.EventHandler(this.btnPodarArbol_Click);
+            // 
             // frmArboles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(683, 496);
+            this.Controls.Add(this.btnPodarArbol);
             this.Controls.Add(this.btnDibujarA);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.lblRePostOrden);
@@ -269,5 +283,6 @@ namespace EDDemo.Estructuras_No_Lineales
         private System.Windows.Forms.Label lblRePostOrden;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Button btnDibujarA;
+        private System.Windows.Forms.Button btnPodarArbol;
     }
 }

@@ -139,5 +139,23 @@ namespace EDDemo.Estructuras_No_Lineales
             grafica.Show();
         }
 
+        private void btnPodarArbol_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+            if (miRaiz==null)
+            {
+                MessageBox.Show($"el arbol esta vacio");
+                return;
+            }
+            miArbol.podarArbol(ref miRaiz);
+            miArbol=new ArbolBusqueda();
+            txtArbol.Text = "";
+            txtDato.Text = "";
+            lblReInOrden.Text = "";
+            lblRePostOrden.Text = "";
+            lblRePreOrden.Text = "";
+        }
+
+       
     }
 }

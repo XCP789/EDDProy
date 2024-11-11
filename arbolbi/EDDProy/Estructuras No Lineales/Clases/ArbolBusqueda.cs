@@ -149,6 +149,14 @@ namespace EDDemo.Estructuras_No_Lineales
                 MessageBox.Show($"El {valor} NO se encuentra en el arbol");
             }
         }
+        public void podarArbol(ref NodoBinario nodo)
+        {
+            if(nodo == null) 
+                return;
+            podarArbol(ref nodo.Izq);
+            podarArbol(ref nodo.Der);
+            nodo = null;
+        }
     }
 
 }
