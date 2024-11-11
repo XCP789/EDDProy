@@ -156,6 +156,38 @@ namespace EDDemo.Estructuras_No_Lineales
             lblRePreOrden.Text = "";
         }
 
-       
+        private void btnEliminarPredecesor_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+            int valor = int.Parse(txtDato.Text);
+
+            if(miRaiz==null)
+            {
+                MessageBox.Show($"el arbol esta vacio");
+                return;
+            }
+            miRaiz=miArbol.EliminarPredecesor(miRaiz, valor);
+            miArbol.strArbol = "";
+            miArbol.Muestra(1,miRaiz);
+            txtArbol.Text=miArbol.strArbol;
+            MessageBox.Show($"el nodo {valor} hasido eliminado");
+        }
+
+        private void btnEliminarSucesor_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+            int valor = int.Parse(txtDato.Text);
+
+            if (miRaiz == null)
+            {
+                MessageBox.Show($"el arbol esta vacio");
+                return;
+            }
+            miRaiz=miArbol.EliminarSucesor(miRaiz, valor);
+            miArbol.strArbol = "";
+            miArbol.Muestra(1, miRaiz);
+            txtArbol.Text = miArbol.strArbol;
+            MessageBox.Show($"el nodo {valor} ha sido eliminado");
+        }
     }
 }

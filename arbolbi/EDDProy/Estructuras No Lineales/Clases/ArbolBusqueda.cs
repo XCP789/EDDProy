@@ -157,6 +157,74 @@ namespace EDDemo.Estructuras_No_Lineales
             podarArbol(ref nodo.Der);
             nodo = null;
         }
+
+        private NodoBinario BuscarPredecesor(NodoBinario nodo)
+        {
+            NodoBinario aux = nodo.Izq;
+            while (aux != null && aux.Der != null)
+            {
+                aux = aux.Der;
+            }
+            return aux;
+        }
+        public NodoBinario EliminarPredecesor(NodoBinario raiz, int dato)
+        {
+            if(raiz == null)
+                return raiz;
+            if (dato<raiz.Dato)
+            {
+                raiz.Izq=EliminarPredecesor(raiz.Der, dato);
+            }
+            else if (dato>raiz.Dato)
+            {
+                raiz.Der=EliminarPredecesor(raiz.Izq, dato);
+            }
+            else
+            {
+                if (raiz.Izq == null)
+                    return raiz.Der;
+                else if (raiz.Der == null)
+                    return raiz.Izq;
+                NodoBinario predecesor = BuscarPredecesor(raiz);
+                raiz.Dato = predecesor.Dato;
+                raiz.Izq= EliminarPredecesor(raiz.Izq, predecesor.Dato);
+            }
+            return raiz;
+        }
+
+        private NodoBinario BuscarSucesor(NodoBinario nodo)
+        {
+            NodoBinario aux = nodo.Der;
+            while (aux != null && aux.Der != null)
+            {
+                aux = aux.Der;
+            }
+            return aux;
+        }
+        public NodoBinario EliminarSucesor(NodoBinario raiz, int dato)
+        {
+            if(raiz== null)
+                return raiz;
+            if (dato < raiz.Dato)
+            {
+                raiz.Izq = EliminarSucesor(raiz.Izq, dato);
+            }
+            else if (dato>raiz.Dato)
+            {
+                raiz.Der=EliminarSucesor(raiz.Der, dato);
+            }
+            else
+            {
+                if(raiz.Izq ==null)
+                    return raiz.Der;
+                else if (raiz.Der == null)
+                    return raiz.Izq;
+                NodoBinario sucesor = BuscarSucesor(raiz);
+                raiz.Dato = sucesor.Dato;
+                raiz.Der = EliminarSucesor(raiz.Der, sucesor.Dato);
+            }
+            return raiz;
+        }
     }
 
 }

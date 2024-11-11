@@ -47,6 +47,8 @@ namespace EDDemo.Estructuras_No_Lineales
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnDibujarA = new System.Windows.Forms.Button();
             this.btnPodarArbol = new System.Windows.Forms.Button();
+            this.btnEliminarSucesor = new System.Windows.Forms.Button();
+            this.btnEliminarPredecesor = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.txtNodos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -169,7 +171,6 @@ namespace EDDemo.Estructuras_No_Lineales
             this.lblRePreOrden.Size = new System.Drawing.Size(126, 16);
             this.lblRePreOrden.TabIndex = 18;
             this.lblRePreOrden.Text = "Recorrido Preorden";
-
             // 
             // txtNodos
             // 
@@ -232,11 +233,35 @@ namespace EDDemo.Estructuras_No_Lineales
             this.btnPodarArbol.UseVisualStyleBackColor = true;
             this.btnPodarArbol.Click += new System.EventHandler(this.btnPodarArbol_Click);
             // 
+            // btnEliminarSucesor
+            // 
+            this.btnEliminarSucesor.Location = new System.Drawing.Point(366, 442);
+            this.btnEliminarSucesor.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminarSucesor.Name = "btnEliminarSucesor";
+            this.btnEliminarSucesor.Size = new System.Drawing.Size(124, 43);
+            this.btnEliminarSucesor.TabIndex = 25;
+            this.btnEliminarSucesor.Text = "Eli sucesor";
+            this.btnEliminarSucesor.UseVisualStyleBackColor = true;
+            this.btnEliminarSucesor.Click += new System.EventHandler(this.btnEliminarSucesor_Click);
+            // 
+            // btnEliminarPredecesor
+            // 
+            this.btnEliminarPredecesor.Location = new System.Drawing.Point(178, 442);
+            this.btnEliminarPredecesor.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminarPredecesor.Name = "btnEliminarPredecesor";
+            this.btnEliminarPredecesor.Size = new System.Drawing.Size(124, 43);
+            this.btnEliminarPredecesor.TabIndex = 26;
+            this.btnEliminarPredecesor.Text = "Eli predecesor";
+            this.btnEliminarPredecesor.UseVisualStyleBackColor = true;
+            this.btnEliminarPredecesor.Click += new System.EventHandler(this.btnEliminarPredecesor_Click);
+            // 
             // frmArboles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(683, 496);
+            this.Controls.Add(this.btnEliminarPredecesor);
+            this.Controls.Add(this.btnEliminarSucesor);
             this.Controls.Add(this.btnPodarArbol);
             this.Controls.Add(this.btnDibujarA);
             this.Controls.Add(this.txtBuscar);
@@ -284,5 +309,7 @@ namespace EDDemo.Estructuras_No_Lineales
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Button btnDibujarA;
         private System.Windows.Forms.Button btnPodarArbol;
+        private System.Windows.Forms.Button btnEliminarSucesor;
+        private System.Windows.Forms.Button btnEliminarPredecesor;
     }
 }
