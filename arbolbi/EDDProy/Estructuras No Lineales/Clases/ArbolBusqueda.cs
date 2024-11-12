@@ -282,6 +282,52 @@ namespace EDDemo.Estructuras_No_Lineales
                 return contarHojas(nodo.Izq) + contarHojas(nodo.Der);
             }
         }
+        public int contarNodos(NodoBinario nodo)
+        {
+            if (nodo == null)
+            {
+                return 0;
+            }
+            else
+            {
+                return 1 + contarNodos(nodo.Izq)+contarNodos(nodo.Der);
+            }
+        }
+        public bool AblCompleto(NodoBinario nodo)
+        {
+            if (nodo == null)
+                return true;
+            Cola<NodoBinario> cola = new Cola<NodoBinario>();
+            cola.encolar(nodo);
+
+            bool encontrarHijo=false;
+            while (!cola.vacio())
+            {
+                NodoBinario nodoAux = cola.desencolar();
+                if (nodoAux.Izq != null)
+                { 
+                    if(encontrarHijo)
+                    return false;
+                    cola.encolar(nodoAux.Izq);
+                }
+                else
+                {
+                    encontrarHijo = true;
+                }
+
+                if (nodoAux.Der != null)
+                {
+                    if (encontrarHijo)
+                        return false;
+                    cola.encolar(nodoAux.Der);
+                }
+                else
+                {
+                    encontrarHijo = true;
+                }
+            }
+            return true;
+        }
 
     }
 

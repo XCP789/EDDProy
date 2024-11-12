@@ -55,6 +55,10 @@ namespace EDDemo.Estructuras_No_Lineales
             this.lblAltura = new System.Windows.Forms.Label();
             this.lblContarHojas = new System.Windows.Forms.Label();
             this.btnContarHojas = new System.Windows.Forms.Button();
+            this.lblContarNodos = new System.Windows.Forms.Label();
+            this.btnContarNodo = new System.Windows.Forms.Button();
+            this.lblAblCompleto = new System.Windows.Forms.Label();
+            this.btnAblCompleto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.txtNodos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -321,11 +325,55 @@ namespace EDDemo.Estructuras_No_Lineales
             this.btnContarHojas.UseVisualStyleBackColor = true;
             this.btnContarHojas.Click += new System.EventHandler(this.btnContarHojas_Click);
             // 
+            // lblContarNodos
+            // 
+            this.lblContarNodos.AutoSize = true;
+            this.lblContarNodos.Location = new System.Drawing.Point(707, 354);
+            this.lblContarNodos.Name = "lblContarNodos";
+            this.lblContarNodos.Size = new System.Drawing.Size(87, 16);
+            this.lblContarNodos.TabIndex = 34;
+            this.lblContarNodos.Text = "Contar nodos";
+            // 
+            // btnContarNodo
+            // 
+            this.btnContarNodo.Location = new System.Drawing.Point(578, 341);
+            this.btnContarNodo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnContarNodo.Name = "btnContarNodo";
+            this.btnContarNodo.Size = new System.Drawing.Size(124, 43);
+            this.btnContarNodo.TabIndex = 33;
+            this.btnContarNodo.Text = "contar N";
+            this.btnContarNodo.UseVisualStyleBackColor = true;
+            this.btnContarNodo.Click += new System.EventHandler(this.btnContarNodo_Click);
+            // 
+            // lblAblCompleto
+            // 
+            this.lblAblCompleto.AutoSize = true;
+            this.lblAblCompleto.Location = new System.Drawing.Point(707, 404);
+            this.lblAblCompleto.Name = "lblAblCompleto";
+            this.lblAblCompleto.Size = new System.Drawing.Size(63, 16);
+            this.lblAblCompleto.TabIndex = 36;
+            this.lblAblCompleto.Text = "completo";
+            // 
+            // btnAblCompleto
+            // 
+            this.btnAblCompleto.Location = new System.Drawing.Point(578, 391);
+            this.btnAblCompleto.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAblCompleto.Name = "btnAblCompleto";
+            this.btnAblCompleto.Size = new System.Drawing.Size(124, 43);
+            this.btnAblCompleto.TabIndex = 35;
+            this.btnAblCompleto.Text = "abl completo";
+            this.btnAblCompleto.UseVisualStyleBackColor = true;
+            this.btnAblCompleto.Click += new System.EventHandler(this.btnAblCompleto_Click);
+            // 
             // frmArboles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(891, 491);
+            this.Controls.Add(this.lblAblCompleto);
+            this.Controls.Add(this.btnAblCompleto);
+            this.Controls.Add(this.lblContarNodos);
+            this.Controls.Add(this.btnContarNodo);
             this.Controls.Add(this.lblContarHojas);
             this.Controls.Add(this.btnContarHojas);
             this.Controls.Add(this.lblAltura);
@@ -389,5 +437,9 @@ namespace EDDemo.Estructuras_No_Lineales
         private System.Windows.Forms.Label lblAltura;
         private System.Windows.Forms.Label lblContarHojas;
         private System.Windows.Forms.Button btnContarHojas;
+        private System.Windows.Forms.Label lblContarNodos;
+        private System.Windows.Forms.Button btnContarNodo;
+        private System.Windows.Forms.Label lblAblCompleto;
+        private System.Windows.Forms.Button btnAblCompleto;
     }
 }

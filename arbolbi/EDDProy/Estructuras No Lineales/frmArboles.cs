@@ -222,9 +222,34 @@ namespace EDDemo.Estructuras_No_Lineales
             if( miRaiz == null)
             {
                 MessageBox.Show("el arbol esta vacio");
+                return;
             }
             int NumHojas=miArbol.contarHojas(miRaiz);
             lblContarHojas.Text=$"Numero de hojas: {NumHojas}";
+        }
+
+        private void btnContarNodo_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+            if (miRaiz == null)
+            {
+                MessageBox.Show("el arbol esta vacio");
+                return;
+            }
+            int NumNodos=miArbol.contarNodos(miRaiz);
+            lblContarNodos.Text=$"Numero de hojas: {NumNodos}";
+        }
+
+        private void btnAblCompleto_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+            if (miRaiz == null)
+            {
+                MessageBox.Show("el arbol esta vacio");
+                return;
+            }
+            bool eCompleto = miArbol.AblCompleto(miRaiz);   
+            lblAblCompleto.Text = $"Numero de hojas: {eCompleto}";
         }
     }
 }
