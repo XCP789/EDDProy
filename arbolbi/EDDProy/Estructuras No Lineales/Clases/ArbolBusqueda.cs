@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EDDemo.Estructuras_No_Lineales.Clases;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -225,6 +226,63 @@ namespace EDDemo.Estructuras_No_Lineales
             }
             return raiz;
         }
+
+        public void RecorrerAmplitud(NodoBinario nodo)
+        {
+            if(nodo==null)
+                return;
+            Cola<NodoBinario> cola = new Cola<NodoBinario>();
+            cola.encolar(nodo);
+
+            while(!cola.vacio())
+            {
+                NodoBinario nodoAux = cola.desencolar();
+                strRecorrido += nodoAux.Dato + ", ";
+
+                if (nodoAux.Izq!=null)
+                    cola.encolar(nodoAux.Izq);
+                if (nodoAux.Der!=null)
+                    cola.encolar(nodoAux.Der);
+            }
+        }
+
+        public int Altura(NodoBinario nodo)
+        {
+            if(nodo==null)
+            {
+                return -1;
+            }
+            else
+            {
+                int alturaIzq=Altura(nodo.Izq);
+                int alturaDer=Altura(nodo.Der);
+
+                if(alturaIzq>alturaDer)
+                {
+                    return alturaIzq + 1;
+                }
+                else
+                {
+                    return alturaDer + 1;
+                }
+            }
+        }
+        public int contarHojas(NodoBinario nodo)
+        {
+            if (nodo == null)
+            {
+                return 0;
+            }
+            if (nodo.Izq==null && nodo.Der==null)
+            {
+                return 1;
+            }
+            else
+            {
+                return contarHojas(nodo.Izq) + contarHojas(nodo.Der);
+            }
+        }
+
     }
 
 }

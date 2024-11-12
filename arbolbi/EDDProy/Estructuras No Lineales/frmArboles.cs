@@ -189,5 +189,42 @@ namespace EDDemo.Estructuras_No_Lineales
             txtArbol.Text = miArbol.strArbol;
             MessageBox.Show($"el nodo {valor} ha sido eliminado");
         }
+
+        private void btnReAmplitud_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+            if (miRaiz == null)
+            {
+                MessageBox.Show("el arbol esta vacio");
+                return;
+            }
+            miArbol.strRecorrido = "";
+            miArbol.RecorrerAmplitud(miRaiz);
+
+            lblReAmplitud.Text=$"recorrido: {miArbol.strRecorrido}";
+        }
+
+        private void btnAltura_Click(object sender, EventArgs e)
+        {
+            miRaiz= miArbol.RegresaRaiz();
+            if(miRaiz == null)
+            {
+                MessageBox.Show($"el arbol esta vacio");
+            }
+            int altura = miArbol.Altura(miRaiz);
+
+            lblAltura.Text = $"Altura de Arbol: {altura}";
+        }
+
+        private void btnContarHojas_Click(object sender, EventArgs e)
+        {
+            miRaiz=miArbol.RegresaRaiz();
+            if( miRaiz == null)
+            {
+                MessageBox.Show("el arbol esta vacio");
+            }
+            int NumHojas=miArbol.contarHojas(miRaiz);
+            lblContarHojas.Text=$"Numero de hojas: {NumHojas}";
+        }
     }
 }
