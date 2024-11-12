@@ -251,5 +251,18 @@ namespace EDDemo.Estructuras_No_Lineales
             bool eCompleto = miArbol.AblCompleto(miRaiz);   
             lblAblCompleto.Text = $"Numero de hojas: {eCompleto}";
         }
+
+        private void btnArbolLleno_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+
+            if(miRaiz == null)
+            {
+                MessageBox.Show("el arbol esta vacio");
+                return;
+            }
+            bool Arbolll=miArbol.ArbolLleno(miRaiz);
+            lblArbolLleno.Text = $"arbol lleno: {Arbolll}";
+        }
     }
 }

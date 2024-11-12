@@ -59,6 +59,8 @@ namespace EDDemo.Estructuras_No_Lineales
             this.btnContarNodo = new System.Windows.Forms.Button();
             this.lblAblCompleto = new System.Windows.Forms.Label();
             this.btnAblCompleto = new System.Windows.Forms.Button();
+            this.lblArbolLleno = new System.Windows.Forms.Label();
+            this.btnArbolLleno = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.txtNodos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,7 +89,7 @@ namespace EDDemo.Estructuras_No_Lineales
             // 
             this.txtArbol.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtArbol.Location = new System.Drawing.Point(311, 19);
+            this.txtArbol.Location = new System.Drawing.Point(311, 17);
             this.txtArbol.Margin = new System.Windows.Forms.Padding(2);
             this.txtArbol.Multiline = true;
             this.txtArbol.Name = "txtArbol";
@@ -365,11 +367,33 @@ namespace EDDemo.Estructuras_No_Lineales
             this.btnAblCompleto.UseVisualStyleBackColor = true;
             this.btnAblCompleto.Click += new System.EventHandler(this.btnAblCompleto_Click);
             // 
+            // lblArbolLleno
+            // 
+            this.lblArbolLleno.AutoSize = true;
+            this.lblArbolLleno.Location = new System.Drawing.Point(440, 459);
+            this.lblArbolLleno.Name = "lblArbolLleno";
+            this.lblArbolLleno.Size = new System.Drawing.Size(70, 16);
+            this.lblArbolLleno.TabIndex = 38;
+            this.lblArbolLleno.Text = "arbol lleno";
+            // 
+            // btnArbolLleno
+            // 
+            this.btnArbolLleno.Location = new System.Drawing.Point(311, 446);
+            this.btnArbolLleno.Margin = new System.Windows.Forms.Padding(2);
+            this.btnArbolLleno.Name = "btnArbolLleno";
+            this.btnArbolLleno.Size = new System.Drawing.Size(124, 43);
+            this.btnArbolLleno.TabIndex = 37;
+            this.btnArbolLleno.Text = "abl lleno";
+            this.btnArbolLleno.UseVisualStyleBackColor = true;
+            this.btnArbolLleno.Click += new System.EventHandler(this.btnArbolLleno_Click);
+            // 
             // frmArboles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(891, 491);
+            this.ClientSize = new System.Drawing.Size(891, 519);
+            this.Controls.Add(this.lblArbolLleno);
+            this.Controls.Add(this.btnArbolLleno);
             this.Controls.Add(this.lblAblCompleto);
             this.Controls.Add(this.btnAblCompleto);
             this.Controls.Add(this.lblContarNodos);
@@ -441,5 +465,7 @@ namespace EDDemo.Estructuras_No_Lineales
         private System.Windows.Forms.Button btnContarNodo;
         private System.Windows.Forms.Label lblAblCompleto;
         private System.Windows.Forms.Button btnAblCompleto;
+        private System.Windows.Forms.Label lblArbolLleno;
+        private System.Windows.Forms.Button btnArbolLleno;
     }
 }

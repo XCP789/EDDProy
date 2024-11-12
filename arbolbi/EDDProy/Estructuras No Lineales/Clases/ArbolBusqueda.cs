@@ -329,6 +329,18 @@ namespace EDDemo.Estructuras_No_Lineales
             return true;
         }
 
+        public bool ArbolLleno(NodoBinario nodo)
+        {
+            if (nodo==null) return true;
+
+            if(nodo.Izq == null && nodo.Der == null) return true;
+
+            if(nodo.Izq !=null && nodo.Der != null)
+                return ArbolLleno(nodo.Izq) && ArbolLleno(nodo.Der); 
+
+            return false;
+        }
+
     }
 
 }
