@@ -249,7 +249,7 @@ namespace EDDemo.Estructuras_No_Lineales
                 return;
             }
             bool eCompleto = miArbol.AblCompleto(miRaiz);   
-            lblAblCompleto.Text = $"Numero de hojas: {eCompleto}";
+            lblAblCompleto.Text = $"Arbol esta completo: {eCompleto}";
         }
 
         private void btnArbolLleno_Click(object sender, EventArgs e)
@@ -262,7 +262,12 @@ namespace EDDemo.Estructuras_No_Lineales
                 return;
             }
             bool Arbolll=miArbol.ArbolLleno(miRaiz);
-            lblArbolLleno.Text = $"arbol lleno: {Arbolll}";
+            lblArbolLleno.Text = $"arbol esta lleno: {Arbolll}";
+        }
+
+        private void lblReAmplitud_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
