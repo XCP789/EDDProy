@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using EDDemo.Estructuras_Lineales;
 using EDDemo.Estructuras_No_Lineales;
 using EDDemo.M._Ordenamiento.M._externo;
+using EDDemo.M._Ordenamiento.M._interno;
 
 namespace EDDemo
 {
@@ -89,6 +90,13 @@ namespace EDDemo
             FrmBurbuja mBurbuja = new FrmBurbuja();
             mBurbuja.MdiParent = this;
             mBurbuja.Show();
+        }
+
+        private void shellsortToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmShellsort mShellsort = new FrmShellsort();
+            mShellsort.MdiParent = this;
+            mShellsort.Show();
         }
     }
 }

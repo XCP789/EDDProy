@@ -106,12 +106,19 @@
       <DependentUpon>frmInicio.cs</DependentUpon>
     </Compile>
     <Compile Include="M. Ordenamiento\Clases\Burbuja.cs" />
-    <Compile Include="M. Ordenamiento\M. externo\FrmBurbuja.cs">
+    <Compile Include="M. Ordenamiento\M. interno\FrmBurbuja.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="M. Ordenamiento\M. externo\FrmBurbuja.Designer.cs">
+    <Compile Include="M. Ordenamiento\M. interno\FrmBurbuja.Designer.cs">
       <DependentUpon>FrmBurbuja.cs</DependentUpon>
     </Compile>
+    <Compile Include="M. Ordenamiento\M. interno\FrmShellsort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M. Ordenamiento\M. interno\FrmShellsort.Designer.cs">
+      <DependentUpon>FrmShellsort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M. Ordenamiento\Clases\Shellsort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Estructuras Lineales\FormLstCirculares.resx">
@@ -138,8 +145,11 @@
     <EmbeddedResource Include="frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="M. Ordenamiento\M. externo\FrmBurbuja.resx">
+    <EmbeddedResource Include="M. Ordenamiento\M. interno\FrmBurbuja.resx">
       <DependentUpon>FrmBurbuja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M. Ordenamiento\M. interno\FrmShellsort.resx">
+      <DependentUpon>FrmShellsort.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -165,7 +175,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="M. Ordenamiento\M. interno\" />
+    <Folder Include="M. Ordenamiento\M. externo\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
