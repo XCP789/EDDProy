@@ -1,4 +1,5 @@
-﻿using EDDemo.Estructuras_No_Lineales.Clases;
+﻿using EDDemo.Estructuras_No_Lineales;
+using EDDemo.Estructuras_Lineales.Clases;
 using System;
 using System.Collections.Generic;
 using System.Linq;

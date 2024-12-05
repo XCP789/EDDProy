@@ -49,9 +49,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Estructuras Lineales\Clases\Listas.cs" />
+    <Compile Include="Estructuras Lineales\Clases\ListaCircularesS.cs" />
+    <Compile Include="Estructuras Lineales\Clases\ListaDobles.cs" />
+    <Compile Include="Estructuras Lineales\Clases\ListaEnlazada.cs" />
     <Compile Include="Estructuras Lineales\Clases\Nodo.cs" />
-    <Compile Include="Estructuras Lineales\Clases\Pilas.cs" />
+    <Compile Include="Estructuras Lineales\Clases\Pila.cs" />
+    <Compile Include="Estructuras Lineales\FormLstCirculares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\FormLstCirculares.Designer.cs">
+      <DependentUpon>FormLstCirculares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\FormLstDobles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\FormLstDobles.Designer.cs">
+      <DependentUpon>FormLstDobles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\FormLstSimples.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\FormLstSimples.Designer.cs">
+      <DependentUpon>FormLstSimples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\FormPilas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\FormPilas.Designer.cs">
+      <DependentUpon>FormPilas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estructuras No Lineales\Clases\ArbolBusqueda.cs" />
     <Compile Include="Estructuras Lineales\Clases\Cola.cs" />
     <Compile Include="Estructuras No Lineales\frmArboles.cs">
@@ -67,31 +93,43 @@
     <Compile Include="Estructuras No Lineales\FrmGrafica.Designer.cs">
       <DependentUpon>FrmGrafica.cs</DependentUpon>
     </Compile>
+    <Compile Include="Estructuras Lineales\FormColas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\FormColas.Designer.cs">
+      <DependentUpon>FormColas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmInicio.Designer.cs">
       <DependentUpon>frmInicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Estructuras Lineales\frmPilas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Estructuras Lineales\frmPilas.Designer.cs">
-      <DependentUpon>frmPilas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Estructuras Lineales\FormLstCirculares.resx">
+      <DependentUpon>FormLstCirculares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\FormLstDobles.resx">
+      <DependentUpon>FormLstDobles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\FormLstSimples.resx">
+      <DependentUpon>FormLstSimples.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\FormPilas.resx">
+      <DependentUpon>FormPilas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estructuras No Lineales\frmArboles.resx">
       <DependentUpon>frmArboles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estructuras No Lineales\FrmGrafica.resx">
       <DependentUpon>FrmGrafica.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\FormColas.resx">
+      <DependentUpon>FormColas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Estructuras Lineales\frmPilas.resx">
-      <DependentUpon>frmPilas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -115,6 +153,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="M. Ordenamiento\Clases\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EDDemo.Estructuras_Lineales;
 using EDDemo.Estructuras_No_Lineales;
 
 namespace EDDemo
@@ -30,7 +31,7 @@ namespace EDDemo
 
         private void pilasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPilas mPilas = new frmPilas();
+            FormPilas mPilas = new FormPilas();
             mPilas.MdiParent = this;
             mPilas.Show();
         }
@@ -52,6 +53,34 @@ namespace EDDemo
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void colasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormColas mColas = new FormColas();
+            mColas.MdiParent = this;
+            mColas.Show();
+        }
+
+        private void listasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormLstSimples mLsimple = new FormLstSimples();
+            mLsimple.MdiParent = this;
+            mLsimple.Show();
+        }
+
+        private void lToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormLstDobles mLdobles = new FormLstDobles();
+            mLdobles.MdiParent = this;
+            mLdobles.Show();
+        }
+
+        private void listasCircularesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormLstCirculares mLcirculantes = new FormLstCirculares();
+            mLcirculantes.MdiParent = this;
+            mLcirculantes.Show();
         }
     }
 }

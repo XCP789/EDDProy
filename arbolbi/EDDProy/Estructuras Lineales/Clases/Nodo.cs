@@ -4,11 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EDDemo
+namespace EDDemo.Estructuras_Lineales.Clases
 {
-    public class Nodo
+    public class Nodo<T>
     {
-        public String Dato;
-        public Nodo sig;
+        public T Dato {  get; set; }
+        public Nodo<T> sig { get; set; }
+        public Nodo<T> ants { get; set; }
+
+        public Nodo(T dato)
+        {
+            Dato = dato;
+            sig=null;
+            ants = null;
+        }
     }
 }

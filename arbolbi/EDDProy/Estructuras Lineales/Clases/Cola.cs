@@ -4,14 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EDDemo.Estructuras_No_Lineales.Clases
+namespace EDDemo.Estructuras_Lineales.Clases
 {
         public class NodoCola<T>
         {
             public T Valor;
             public NodoCola<T> sig;
 
-            public NodoCola(T valor)
+        public NodoCola()
+        {
+        }
+
+        public NodoCola(T valor)
             {
                 Valor = valor;
                 sig = null;
@@ -20,8 +24,8 @@ namespace EDDemo.Estructuras_No_Lineales.Clases
 
         public class Cola<T>
         {
-            private NodoCola<T> top;
-            private NodoCola<T> cola;
+            public NodoCola<T> top;
+            public NodoCola<T> cola;
 
             public Cola()
             {
