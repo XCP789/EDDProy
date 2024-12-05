@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using EDDemo.Estructuras_Lineales;
 using EDDemo.Estructuras_No_Lineales;
+using EDDemo.M._Ordenamiento.M._externo;
 
 namespace EDDemo
 {
@@ -81,6 +82,13 @@ namespace EDDemo
             FormLstCirculares mLcirculantes = new FormLstCirculares();
             mLcirculantes.MdiParent = this;
             mLcirculantes.Show();
+        }
+
+        private void burbujaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBurbuja mBurbuja = new FrmBurbuja();
+            mBurbuja.MdiParent = this;
+            mBurbuja.Show();
         }
     }
 }
