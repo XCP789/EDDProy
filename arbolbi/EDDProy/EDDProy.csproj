@@ -106,11 +106,19 @@
       <DependentUpon>frmInicio.cs</DependentUpon>
     </Compile>
     <Compile Include="M. Ordenamiento\Clases\Burbuja.cs" />
+    <Compile Include="M. Ordenamiento\Clases\Quicksort.cs" />
+    <Compile Include="M. Ordenamiento\Clases\Radix.cs" />
     <Compile Include="M. Ordenamiento\M. interno\FrmBurbuja.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="M. Ordenamiento\M. interno\FrmBurbuja.Designer.cs">
       <DependentUpon>FrmBurbuja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M. Ordenamiento\M. interno\FrmQuicksort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M. Ordenamiento\M. interno\FrmQuicksort.Designer.cs">
+      <DependentUpon>FrmQuicksort.cs</DependentUpon>
     </Compile>
     <Compile Include="M. Ordenamiento\M. interno\FrmShellsort.cs">
       <SubType>Form</SubType>
@@ -119,6 +127,12 @@
       <DependentUpon>FrmShellsort.cs</DependentUpon>
     </Compile>
     <Compile Include="M. Ordenamiento\Clases\Shellsort.cs" />
+    <Compile Include="M. Ordenamiento\M. interno\FrmRadix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M. Ordenamiento\M. interno\FrmRadix.Designer.cs">
+      <DependentUpon>FrmRadix.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Estructuras Lineales\FormLstCirculares.resx">
@@ -147,6 +161,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="M. Ordenamiento\M. interno\FrmBurbuja.resx">
       <DependentUpon>FrmBurbuja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M. Ordenamiento\M. interno\FrmQuicksort.resx">
+      <DependentUpon>FrmQuicksort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M. Ordenamiento\M. interno\FrmRadix.resx">
+      <DependentUpon>FrmRadix.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="M. Ordenamiento\M. interno\FrmShellsort.resx">
       <DependentUpon>FrmShellsort.cs</DependentUpon>

@@ -161,6 +161,7 @@ namespace EDDemo
             this.quickshortToolStripMenuItem.Name = "quickshortToolStripMenuItem";
             this.quickshortToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.quickshortToolStripMenuItem.Text = "Quicksort";
+            this.quickshortToolStripMenuItem.Click += new System.EventHandler(this.quickshortToolStripMenuItem_Click);
             // 
             // shellsortToolStripMenuItem
             // 
@@ -174,6 +175,7 @@ namespace EDDemo
             this.radixToolStripMenuItem.Name = "radixToolStripMenuItem";
             this.radixToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.radixToolStripMenuItem.Text = "Radix";
+            this.radixToolStripMenuItem.Click += new System.EventHandler(this.radixToolStripMenuItem_Click);
             // 
             // metodoExternoToolStripMenuItem
             // 

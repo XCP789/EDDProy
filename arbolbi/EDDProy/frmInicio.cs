@@ -98,5 +98,19 @@ namespace EDDemo
             mShellsort.MdiParent = this;
             mShellsort.Show();
         }
+
+        private void quickshortToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmQuicksort mQuicksort = new FrmQuicksort();
+            mQuicksort.MdiParent = this;
+            mQuicksort.Show();
+        }
+
+        private void radixToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmRadix mRadix = new FrmRadix();
+            mRadix.MdiParent = this;
+            mRadix.Show();
+        }
     }
 }
