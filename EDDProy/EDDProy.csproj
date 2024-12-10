@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46442EDF-3D6F-4384-9AD9-E03059889C4B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EDDemo</RootNamespace>
+    <AssemblyName>EDDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Graphviz, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Graphviz.2.38.0.2\lib\Graphviz.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Estructuras Lineales\Clases\ListaCircularesS.cs" />
+    <Compile Include="Estructuras Lineales\Clases\ListaDobles.cs" />
+    <Compile Include="Estructuras Lineales\Clases\ListaEnlazada.cs" />
+    <Compile Include="Estructuras Lineales\Clases\Nodo.cs" />
+    <Compile Include="Estructuras Lineales\Clases\Pila.cs" />
+    <Compile Include="Estructuras Lineales\FormLstCirculares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\FormLstCirculares.Designer.cs">
+      <DependentUpon>FormLstCirculares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\FormLstDobles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\FormLstDobles.Designer.cs">
+      <DependentUpon>FormLstDobles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\FormLstSimples.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\FormLstSimples.Designer.cs">
+      <DependentUpon>FormLstSimples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\FormPilas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\FormPilas.Designer.cs">
+      <DependentUpon>FormPilas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras No Lineales\Clases\ArbolBusqueda.cs" />
+    <Compile Include="Estructuras Lineales\Clases\Cola.cs" />
+    <Compile Include="Estructuras No Lineales\frmArboles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras No Lineales\frmArboles.Designer.cs">
+      <DependentUpon>frmArboles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras No Lineales\Clases\NodoBinario.cs" />
+    <Compile Include="Estructuras No Lineales\FrmGrafica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras No Lineales\FrmGrafica.Designer.cs">
+      <DependentUpon>FrmGrafica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\FormColas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\FormColas.Designer.cs">
+      <DependentUpon>FormColas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicio.Designer.cs">
+      <DependentUpon>frmInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M. Busqueda\Clases\BusquedaBinaria.cs" />
+    <Compile Include="M. Busqueda\Clases\BusquedaHASH.cs" />
+    <Compile Include="M. Busqueda\FrmBqBinaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M. Busqueda\FrmBqBinaria.Designer.cs">
+      <DependentUpon>FrmBqBinaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M. Busqueda\FrmBqHASH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M. Busqueda\FrmBqHASH.Designer.cs">
+      <DependentUpon>FrmBqHASH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M. Ordenamiento\Clases\Burbuja.cs" />
+    <Compile Include="M. Ordenamiento\Clases\MergeDirecta.cs" />
+    <Compile Include="M. Ordenamiento\Clases\MergeNatural.cs" />
+    <Compile Include="M. Ordenamiento\Clases\MergeSort.cs" />
+    <Compile Include="M. Ordenamiento\Clases\Quicksort.cs" />
+    <Compile Include="M. Ordenamiento\Clases\Radix.cs" />
+    <Compile Include="M. Ordenamiento\M. externo\Intercalacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M. Ordenamiento\M. externo\Intercalacion.Designer.cs">
+      <DependentUpon>Intercalacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M. Ordenamiento\M. externo\MezclaDirecta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M. Ordenamiento\M. externo\MezclaDirecta.Designer.cs">
+      <DependentUpon>MezclaDirecta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M. Ordenamiento\M. externo\MezclaNatural.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M. Ordenamiento\M. externo\MezclaNatural.Designer.cs">
+      <DependentUpon>MezclaNatural.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M. Ordenamiento\M. interno\FrmBurbuja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M. Ordenamiento\M. interno\FrmBurbuja.Designer.cs">
+      <DependentUpon>FrmBurbuja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M. Ordenamiento\M. interno\FrmQuicksort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M. Ordenamiento\M. interno\FrmQuicksort.Designer.cs">
+      <DependentUpon>FrmQuicksort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M. Ordenamiento\M. interno\FrmShellsort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M. Ordenamiento\M. interno\FrmShellsort.Designer.cs">
+      <DependentUpon>FrmShellsort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="M. Ordenamiento\Clases\Shellsort.cs" />
+    <Compile Include="M. Ordenamiento\M. interno\FrmRadix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M. Ordenamiento\M. interno\FrmRadix.Designer.cs">
+      <DependentUpon>FrmRadix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recursividad\Clases\CdgRecursivo.cs" />
+    <Compile Include="Recursividad\FrmRecursividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\FrmRecursividad.Designer.cs">
+      <DependentUpon>FrmRecursividad.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Estructuras Lineales\FormLstCirculares.resx">
+      <DependentUpon>FormLstCirculares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\FormLstDobles.resx">
+      <DependentUpon>FormLstDobles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\FormLstSimples.resx">
+      <DependentUpon>FormLstSimples.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\FormPilas.resx">
+      <DependentUpon>FormPilas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras No Lineales\frmArboles.resx">
+      <DependentUpon>frmArboles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras No Lineales\FrmGrafica.resx">
+      <DependentUpon>FrmGrafica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\FormColas.resx">
+      <DependentUpon>FormColas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicio.resx">
+      <DependentUpon>frmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M. Busqueda\FrmBqBinaria.resx">
+      <DependentUpon>FrmBqBinaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M. Busqueda\FrmBqHASH.resx">
+      <DependentUpon>FrmBqHASH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M. Ordenamiento\M. externo\Intercalacion.resx">
+      <DependentUpon>Intercalacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M. Ordenamiento\M. externo\MezclaDirecta.resx">
+      <DependentUpon>MezclaDirecta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M. Ordenamiento\M. externo\MezclaNatural.resx">
+      <DependentUpon>MezclaNatural.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M. Ordenamiento\M. interno\FrmBurbuja.resx">
+      <DependentUpon>FrmBurbuja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M. Ordenamiento\M. interno\FrmQuicksort.resx">
+      <DependentUpon>FrmQuicksort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M. Ordenamiento\M. interno\FrmRadix.resx">
+      <DependentUpon>FrmRadix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="M. Ordenamiento\M. interno\FrmShellsort.resx">
+      <DependentUpon>FrmShellsort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Recursividad\FrmRecursividad.resx">
+      <DependentUpon>FrmRecursividad.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
